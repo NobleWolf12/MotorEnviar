@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div >
+    <div>
+        <h1 id="titulo">
+            Motor de envio V 1.0
+        </h1>
+    </div>
+    <div>
+        <form action="~/Home/Contato" method="post">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="remetente"><strong> Remetente: </strong></label>
+                    <input type="email" style="width: 69.5em" name="remetente" required />
+                </div>
+                <div class="campo">
+                    <label for="senha"><strong>Senha: </strong> </label>
+                    <input type="password" style=" width: 69.5em" name="senha" required />
+                </div>
+                <div class="campo">
+                    <label for="caminho"><strong>Caminho: </strong> </label>
+                    <input type="text" style="width: 69.5em" name="caminho" placeholder="Digite o caminho do arquivo. Ex.C:\Users\Public\Pictures" required />
+                </div>
+                <br />
+                <div class="campo">
+                    <label for="email"><strong> E-mail: </strong> </label>
+                    <input type="file" style="width: 69.5em" name="email" required />
+                </div>
+                <div class="campo">
+                    <label for="assunto"><strong>Assunto: </strong> </label>
+                    <input type="text" style="width: 69.5em" name="assunto" required />
+                </div>
+                <div class="campo">
+                    <label for="descricao"><strong>Descrição: </strong></label>
+                    <textarea rows="6" style="width: 40em" id="descricao" name="descricao" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
