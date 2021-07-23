@@ -29,7 +29,7 @@ input, textarea, button {
         border: 1px solid black;
         box-shadow: 2px 2px 2px;
         display: block;
-        color: aqua;
+        color: black;
     }
 
     .campo input:focus, .campo textarea:focus {
